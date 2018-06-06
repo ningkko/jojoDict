@@ -1,0 +1,62 @@
+<html>
+<head>       
+<meta charset="utf-8">
+<link rel= "icon"; sizes="168x168"； href="img/jojo.png">
+<link rel="stylesheet" type="text/css" href="jojoDict.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>
+        Jojo's Bizzare Dictionary    
+    </title>
+
+    </head>
+<body>
+    
+<center>
+    <h1 style="margin-top:50px;">Jojo's Dictionary</h1></br>    
+    <div class = "imageSection"></div></br>
+    <p style="color: black">--------------------------------------------</p>
+    <!-- select languages -->  
+    <div class="language">
+        <label for="language">-> Language:</label>
+        <select id="language"
+                style="font-size:11.5;
+                       color: darkgray;
+                       border-color: darkgray;">
+          <option selected>CN->EN</option>
+          <option>CN->JPN</option>
+        </select>
+    </div>
+
+    <!--Input section-->
+    <div class = "searchTerm">
+        <label for="searchTerm">-> Enter:</label>
+        <input type="text" 
+               class="searchTerm2"
+               id="searchTerm"
+               placeholder="e.g..神砂岚"
+               >
+        <button onclick="returnValue()">✨</button>
+    </div>
+    
+    <!--Output section-->
+    <p style="position:relative;
+              margin-top: 15px;
+              margin-left: -185px;">-> Output:<p>
+    <div style="margin-top: 20px;
+                font-size: 9;">
+        <output id="output">Devine Sandstorm</output>
+    </div>
+    <p ></br></br></br></br></br></br></br></br>--------------------------------------------</p>
+    <div class="footer">Copyright @ningkko, June 2018</div>
+        </center>
+
+    <main></main>
+<!--Script-->
+<script src="jojoDict.js"></script>
+
+    </body>
+</html>
