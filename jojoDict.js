@@ -33,7 +33,7 @@ function returnValue(){//get language selection
         document.getElementById("output").innerHTML = ENresult;
         }
         else{
-        document.getElementById("output").innerHTML = "Target word not found.";
+        document.getElementById("output").innerHTML = "没找到   _(:з」∠)_发邮件提醒管理员吧";
         }
     }
     else if(language.value==="EN->CN"){
