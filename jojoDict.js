@@ -35,7 +35,13 @@ function returnValue(){//get language selection
         var CNresult;
         var found = false;
         for(var i = 0; i < data.length; i++){
-            if (data[i].EN === searchTerm.value){
+            var word = data[i].EN
+            word = word.toLowerCase();
+            word =  word.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|||\-|\_|\+|\=|\||\\|||\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g,"");
+            var targetWord = searchTerm.value
+            targetWord = targetWord.toLowerCase();
+            targetWord = targetWord.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|||\-|\_|\+|\=|\||\\|||\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g,"");
+            if (word === targetWord){
                 CNresult=data[i].CN;
                 found = true;
             }
