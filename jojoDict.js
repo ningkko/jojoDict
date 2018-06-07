@@ -18,12 +18,18 @@ function returnValue(){//get language selection
         var ENresult;
         var found = false;
         for(var i = 0; i < data.length; i++){
-            if (data[i].CN === searchTerm.value){
+            var word = data[i].CN
+            word = word.toLowerCase();
+            word =  word.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|||\-|\_|\+|\=|\||\\|||\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g,"");
+            var targetWord = searchTerm.value
+            targetWord = targetWord.toLowerCase();
+            targetWord = targetWord.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|||\-|\_|\+|\=|\||\\|||\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g,"");
+            if (word === targetWord){
                 ENresult=data[i].EN;
                 found = true;
             }
         }
-        if (found == true){
+        if (found==true){
         document.getElementById("output").innerHTML = ENresult;
         }
         else{
