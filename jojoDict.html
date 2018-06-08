@@ -2,7 +2,7 @@
 <head>       
 <meta charset="utf-8">
 <link rel= "icon"; sizes="168x168"； href="img/jojo.png">
-<link rel="stylesheet" type="text/css" href="jojoDict.css">
+<link crel="stylesheet" type="text/css" href="jojoDict.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 <meta
@@ -37,9 +37,13 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
         <label for="searchTerm">-> Enter:</label>
         <input type="text" 
                class="searchTerm2"
-               id="searchTerm"
+               id="input"
                placeholder="e.g..神砂岚"
                >
+		<div class="auto hidden" id="auto">
+			<div class="auto_out">1</div>
+			<div class="auto_out">2</div>
+		</div>
         <button onclick="returnValue()">✨</button>
     </div>
     
@@ -55,9 +59,14 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
     <div class="footer">Copyright June 2018</div>
         </center>
 
-    <main></main>
 <!--Script-->
 <script src="jojoDict.js"></script>
+<script>
+    var autoComplete = new AutoComplete("input","auto",array);
+    document.getElementById("input").onkeyup = function(event){
+        autoComplete.start(event);
+    }
+</script>
 
     </body>
 </html>
