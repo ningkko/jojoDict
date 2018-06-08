@@ -10,12 +10,11 @@ fetch('data.json').then(function(response) {
   }
 });
 
-    var language = document.querySelector('#language');
-    var searchTerm = document.getElementById('input');
-
+var language = document.querySelector('#language');
+var searchTerm = document.getElementById('input');
+var collector=new Array()
 function returnValue(){//get language selection
     if (language.value==="CN->EN"){
-        var array=['a','aa']
         var ENresult;
         var found = false;
         for(var i = 0; i < data.length; i++){
@@ -38,7 +37,6 @@ function returnValue(){//get language selection
         }
     }
     else if(language.value==="EN->CN"){
-        
         var CNresult;
         var found = false;
         for(var i = 0; i < data.length; i++){
@@ -62,7 +60,7 @@ function returnValue(){//get language selection
     }
 }
 
-// 数组去重
+
 Array.prototype.unique = function(){
 	this.sort();
 	var res = [];
@@ -76,20 +74,19 @@ Array.prototype.unique = function(){
 	return res;
 }
 
-// 对样式操作
 var setClass = {
-	hasClass: function(elements,cName){	// 判断是否含有某个class
+	hasClass: function(elements,cName){	
 		if(elements.className.match(new RegExp( "(\\s|^)" + cName + "(\\s|$)") ))
 			return true;
 		else
 			return false;
 	},
-	addClass: function(elements,cName){	// 添加class
+	addClass: function(elements,cName){	
 		if( !this.hasClass( elements,cName ) ){ 
 			elements.className += " " + cName; 
 		};
 	},
-	removeClass: function(elements,cName){	// 移除某个class
+	removeClass: function(elements,cName){	
 		if( this.hasClass( elements,cName ) ){ 
 			elements.className = elements.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," " ); 
 		}
@@ -105,27 +102,24 @@ var Bind = function(This){
 function AutoComplete(input,auto,arr) {
 	this.obj = document.getElementById(input);
 	this.autoObj = document.getElementById(auto);
-	this.search_value = "";	//当前的搜索输入值
-	this.index = -1;		//当前选中的DIV的索引
-	this.value_arr = arr;	//数据库中供检索的值 不包含重复值
+	this.search_value = "";
+	this.index = -1;		
+	this.value_arr = arr;	
 }
-
 AutoComplete.prototype = {
-    init: function(){
+	init: function(){
 		var This = this;
 		setClass.removeClass(This.autoObj,"hidden");
 		this.autoObj.style.left = this.obj.offsetLeft + "px";
 		this.autoObj.style.top = this.obj.offsetTop + this.obj.offsetHeight + "px";
 	},
-
-    deleteDIV: function(){
+	deleteDIV: function(){
 		while(this.autoObj.hasChildNodes()){
 			this.autoObj.removeChild(this.autoObj.firstChild);
 		}
 		setClass.addClass(this.autoObj,"hidden");
 	},
-	
-    autoOnmouseover: function(index){
+	autoOnmouseover: function(index){
 		if(index != this.index){
 			setClass.addClass(this.autoObj.children[index],"on");
 			setClass.removeClass(this.autoObj.children[this.index],"on");
@@ -138,8 +132,8 @@ AutoComplete.prototype = {
 			setClass.addClass(This.autoObj,"hidden");
 		}
 	},
-
-    pressKey: function(event){
+	// 响应键盘
+	pressKey: function(event){
 		var code = event.keyCode;
 		var length = this.autoObj.children.length;
 		if(code == 38){		//↑
@@ -158,14 +152,14 @@ AutoComplete.prototype = {
 			}
 			setClass.addClass(this.autoObj.children[this.index],"on");
 			this.obj.value = this.autoObj.children[this.index].seq;
-		}else{			
+		}else{			//回车
 			this.obj.value = this.autoObj.children[this.index].seq;
 			setClass.addClass(this.autoObj,"hidden");
 			this.index = -1;
 		}
 	},
-
-    start: function(event){
+	// 程序入口
+	start: function(event){
 		event = event || window.event;
 		var code = event.keyCode;
 		var This = this;
@@ -176,7 +170,7 @@ AutoComplete.prototype = {
 			var valueArr = this.value_arr.unique();
 			if(this.obj.value.replace(/(^\s*)|(\s*$)/g,"") == ""){ return;}
 			try{
-				var reg = new RegExp("("+ this.obj.value +")","i");	
+				var reg = new RegExp("("+ this.obj.value +")","i");	//输
 			}catch(e){
 				alert(e.message); 
 			}
