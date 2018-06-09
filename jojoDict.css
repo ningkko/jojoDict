@@ -35,7 +35,7 @@ a:hover{
     color:lightpink;
     }    
 
-@media screen and (max-width: 416px) and (max-height: 645px){
+@media screen and (max-width: 416px) and (max-height: 669px){
     body {
         zoom: 0.953;
         background-image: url(img/bg2.jpg);
@@ -50,7 +50,7 @@ a:hover{
     }
 }
 
-@media screen and (min-height:645.1px){
+@media screen and (min-height:669.1px){
     body{
         zoom:1.09;
         background-image: url(img/bg.jpg);
