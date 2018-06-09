@@ -106,6 +106,7 @@ function AutoComplete(input,auto,arr) {
 	this.index = -1;		
 	this.value_arr = arr;	
 }
+
 AutoComplete.prototype = {
 	init: function(){
 		var This = this;
@@ -113,12 +114,14 @@ AutoComplete.prototype = {
 		this.autoObj.style.left = this.obj.offsetLeft + "px";
 		this.autoObj.style.top = this.obj.offsetTop + this.obj.offsetHeight + "px";
 	},
+	
 	deleteDIV: function(){
 		while(this.autoObj.hasChildNodes()){
 			this.autoObj.removeChild(this.autoObj.firstChild);
 		}
 		setClass.addClass(this.autoObj,"hidden");
 	},
+	
 	autoOnmouseover: function(index){
 		if(index != this.index){
 			setClass.addClass(this.autoObj.children[index],"on");
@@ -126,13 +129,14 @@ AutoComplete.prototype = {
 			this.index = index;
 		}
 	},
+	
 	setValue: function(This){
 		return function(){
 			This.obj.value = this.seq;
 			setClass.addClass(This.autoObj,"hidden");
 		}
 	},
-	// 响应键盘
+
 	pressKey: function(event){
 		var code = event.keyCode;
 		var length = this.autoObj.children.length;
@@ -152,13 +156,13 @@ AutoComplete.prototype = {
 			}
 			setClass.addClass(this.autoObj.children[this.index],"on");
 			this.obj.value = this.autoObj.children[this.index].seq;
-		}else{			//回车
+		}else{			
 			this.obj.value = this.autoObj.children[this.index].seq;
 			setClass.addClass(this.autoObj,"hidden");
 			this.index = -1;
 		}
 	},
-	// 程序入口
+
 	start: function(event){
 		event = event || window.event;
 		var code = event.keyCode;
