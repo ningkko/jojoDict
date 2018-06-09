@@ -5,10 +5,12 @@
 
 }
 .auto{
-	width: 100px;
+	width: 127px;
+    height: 100px;
 	border: 1px solid #dedede;
 	border-top: none;
 	position: absolute;
+    overflow-y: scroll;
 }
 .auto_out{
     font-size: 12px;
@@ -39,7 +41,7 @@ a:hover{
     body {
         zoom: 0.96;
         background-image: url(img/bg2.jpg);
-        background-color: #395b78;
+        background-color: #f9dbe6;
     }
 }
 
@@ -87,7 +89,6 @@ body{
     width:250px;
     height:150px;
     position: relative;
-    background-image: url(img/jolyne.jpg);
     background-size: cover;
     display: block;
 }
@@ -144,146 +145,8 @@ input[type=text],searchTerm{
     overflow-y: scroll;
     line-height: 30px;
     color: #4F4F4F;
-<<<<<<< HEAD
-    font-size: 14px;
-=======
-.auto-inp{
-	padding-left: .5em;
-	color: #666;
-    font-size: 12px;
-
-}
-.auto{
-	width: 100px;
-	border: 1px solid #dedede;
-	border-top: none;
-	position: absolute;
-}
-.auto_out{
-    font-size: 12px;
-	width: 120px;
-	height: 24px;
-	padding-left: .5em;
-	color: #666;
-	background: rgba(255,255,255,0.9);
-	overflow: hidden;
-	white-space: nowrap;
-	-o-text-overflow: ellipsis;
-	text-overflow: ellipsis;
-}
-.auto_out.on{
-	background-color: rgba(255,228,225,0.8);
-	cursor: pointer;
-}
-.hidden{
-	display: none;
-}
-a{color:black;}
-
-a:hover{
-    color:palevioletred;
-    }    
-
-body{
-    
-    background-image: url(img/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    zoom:1.09;
-    font-family: 'Libre Franklin', sans-serif;
-    line-height: 2;
-}
-.background{
-
-    background-color: rgba(255,255,255,0.83);
-    height:550px;
-    width: 320px;
-    position: fixed;
-    margin: auto;
-    left:0;
-    right: 0;
-    top: 80px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    bottom: 100px;
-    
-}
-.imageSection{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width:250px;
-    height:150px;
-    position: relative;
-    background-image: url(img/jolyne.jpg);
-    background-size: cover;
-    display: block;
-}
-
-.language{
-    font-size: 14px;
-    color: black;
-    margin-left:-78px;
-}
-
-.select{
-    font-size:11px;
-    color: #666;
-    border-color: darkgray;
-}
-
-.searchTerm{
-    font-size:14px;
-    margin-top: 5px;
-    margin-right: 11.5px;
-}
->>>>>>> 88a406e9d9ac2361ebc047f328189916693ffc20
-
-button{
-    background: white;
-    border-radius:4px;
-    border-color: darkgray;
-    width: 28px;
-}
-
-input[type=text],searchTerm{
-    margin-top: 5px;
-    border-radius:4px;
-    border:1px solid; 
-    border-color: darkgray;
-    height: 20px;
-    width: 120px;
-}
-
-.outputTag{
-    font-size:14px;
-    margin-top: 5px;
-    margin-left: -169px;
-}
-
-.output{
-    border: 1px solid;
-    height: 100px;
-    width:230px;
-    border-radius: 8px;
-    border-color: darkgray;
-    margin-top: 5px;
-    color:black;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    line-height: 30px;
-    color: #4F4F4F;
     font-size: 14px;
 
-}
-
-.footer{
-    font-size: 12px;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-}
 }
 
 .footer{
