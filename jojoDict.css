@@ -35,14 +35,14 @@ a:hover{
     color:lightpink;
     }    
 
-@media screen and (max-width: 399px) and (max-height: 576px){
+@media screen and (max-width: 416px) and (max-height: 645px){
     body {
-        zoom: 0.85;
+        zoom: 0.953;
         background-image: url(img/bg2.jpg);
     }
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:416.1px){
     body{
         zoom:1.09;
         background-image: url(img/bg.jpg);
@@ -50,13 +50,13 @@ a:hover{
     }
 }
 
-@media screen and (max-width:400px) and (min-height:577px){
+@media screen and (min-height:645.1px){
     body{
+        zoom:1.09;
         background-image: url(img/bg.jpg);
 
     }
 }
-
 
 body{
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body{
     width:250px;
     height:150px;
     position: relative;
-    background-image: url(img/gonin.jpg);
+    background-image: url(img/jolyne.jpg);
     background-size: cover;
     display: block;
 }
