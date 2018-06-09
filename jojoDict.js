@@ -12,10 +12,10 @@ fetch('data.json').then(function(response) {
 
 var language = document.querySelector('#language');
 var searchTerm = document.getElementById('input');
-var collector=new Array()
+
 function returnValue(){//get language selection
     if (language.value==="CN->EN"){
-        var ENresult;
+        var ENresult = new Array();
         var found = false;
         for(var i = 0; i < data.length; i++){
             var word = data[i].CN
@@ -25,15 +25,15 @@ function returnValue(){//get language selection
             targetWord = targetWord.toLowerCase();
             targetWord = targetWord.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|||\-|\_|\+|\=|\||\\|||\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g,"");
             if (word === targetWord){
-                ENresult=data[i].EN;
+                ENresult.push(data[i].EN);
                 found = true;
             }
         }
         if (found==true){
-        document.getElementById("output").innerHTML = ENresult;
+            document.getElementById("output").innerHTML = ENresult;
         }
         else{
-        document.getElementById("output").innerHTML = "没找到   _(:з」∠)_发邮件提醒管理员吧";
+            document.getElementById("output").innerHTML = "没找到   _(:з」∠)_发邮件提醒管理员吧";
         }
     }
     else if(language.value==="EN->CN"){
@@ -52,7 +52,7 @@ function returnValue(){//get language selection
             }
         }
         if (found==true){
-        document.getElementById("output").innerHTML = CNresult;
+        document.getElementById("output").innerHTML = CNresult;        
         }
         else{
         document.getElementById("output").innerHTML = "Target word not found.";
