@@ -43,10 +43,10 @@ body{
     background-attachment: fixed;
     zoom:1.09;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 5.5;
     line-height: 2;
 }
 .background{
+
     background-color: rgba(255,255,255,0.83);
     height:550px;
     width: 320px;
@@ -54,7 +54,7 @@ body{
     margin: auto;
     left:0;
     right: 0;
-    top: 50px;
+    top: 80px;
     overflow-x: hidden;
     overflow-y: scroll;
     bottom: 100px;
@@ -117,20 +117,20 @@ input[type=text],searchTerm{
     width:230px;
     border-radius: 8px;
     border-color: darkgray;
-    margin-left: 166px;
     margin-top: 5px;
     color:black;
     overflow-x: hidden;
     overflow-y: scroll;
     line-height: 30px;
     color: #4F4F4F;
+    font-size: 14px;
 
 }
 
 .footer{
     font-size: 12px;
-    position: fixed;
-    bottom: 0;
-    left:0;
-    right:0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
 }
