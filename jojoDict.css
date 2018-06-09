@@ -43,7 +43,6 @@ body{
     background-attachment: fixed;
     zoom:1.09;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 5.5;
     line-height: 2;
 }
 .background{
@@ -55,7 +54,8 @@ body{
     left:0;
     right: 0;
     top: 50px;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     bottom: 100px;
     
 }
@@ -128,8 +128,8 @@ input[type=text],searchTerm{
 
 .footer{
     font-size: 12px;
-    position: fixed;
-    bottom: 0;
-    left:0;
-    right:0;
+    position: absolute;
+    top: 560px;
+    left: 0;
+    right: 0;
 }
