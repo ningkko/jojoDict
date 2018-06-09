@@ -1,7 +1,7 @@
 .auto-inp{
 	padding-left: .5em;
 	color: #666;
-    	font-size: 12px;
+    font-size: 12px;
 
 }
 .auto{
@@ -39,6 +39,7 @@ a:hover{
     body {
         zoom: 0.96;
         background-image: url(img/bg2.jpg);
+        background-color: #f9dbe6;
     }
 }
 
