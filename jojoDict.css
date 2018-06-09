@@ -37,7 +37,7 @@ a:hover{
 
 @media screen and (max-width: 416px){
     body {
-        zoom: 0.85;
+        zoom: 0.9;
         background-image: url(img/bg2.jpg);
     }
 }
