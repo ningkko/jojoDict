@@ -55,7 +55,8 @@ body{
     left:0;
     right: 0;
     top: 50px;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     bottom: 100px;
     
 }
