@@ -32,7 +32,7 @@
 a{color:black;}
 
 a:hover{
-    color:palevioletred;
+    color:lightpink;
     }    
 
 body{
@@ -46,14 +46,15 @@ body{
     line-height: 2;
 }
 .background{
+
     background-color: rgba(255,255,255,0.83);
     height:550px;
     width: 320px;
-    position: fixed;
+    position: relative;
     margin: auto;
     left:0;
     right: 0;
-    top: 50px;
+    top: 30px;
     overflow-x: hidden;
     overflow-y: scroll;
     bottom: 100px;
@@ -116,13 +117,15 @@ input[type=text],searchTerm{
     width:230px;
     border-radius: 8px;
     border-color: darkgray;
-    margin-left: 166px;
     margin-top: 5px;
     color:black;
     overflow-x: hidden;
     overflow-y: scroll;
     line-height: 30px;
     color: #4F4F4F;
+<<<<<<< HEAD
+    font-size: 14px;
+=======
 .auto-inp{
 	padding-left: .5em;
 	color: #666;
@@ -213,6 +216,7 @@ body{
     margin-top: 5px;
     margin-right: 11.5px;
 }
+>>>>>>> 88a406e9d9ac2361ebc047f328189916693ffc20
 
 button{
     background: white;
@@ -263,8 +267,8 @@ input[type=text],searchTerm{
 
 .footer{
     font-size: 12px;
-    position: absolute;
-    top: 560px;
+    position: relative;
+    top: 50px;
     left: 0;
     right: 0;
 }
