@@ -89,6 +89,7 @@ body{
     width:250px;
     height:150px;
     position: relative;
+    background-image: url(img/1.jpg);
     background-size: cover;
     display: block;
 }
@@ -147,6 +148,15 @@ input[type=text],searchTerm{
     color: #4F4F4F;
     font-size: 14px;
 
+}
+
+.footer{
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
 }
 
 .footer{

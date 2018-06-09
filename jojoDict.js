@@ -33,7 +33,7 @@ function returnValue(){//get language selection
             document.getElementById("output").innerHTML = ENresult;
         }
         else{
-            document.getElementById("output").innerHTML = "没找到   _(:з」∠)_发邮件提醒管理员吧";
+            document.getElementById("output").innerHTML = "没找到_(:з」∠)_</br>检查一下翻译语言？还是没找到的话就发邮件提醒管理员吧";
         }
     }
     else if(language.value==="EN->CN"){
@@ -55,11 +55,44 @@ function returnValue(){//get language selection
         document.getElementById("output").innerHTML = CNresult;        
         }
         else{
-        document.getElementById("output").innerHTML = "Target word not found.";
+        document.getElementById("output").innerHTML = "Target word not found.</br>_(-ω-`_)⌒)_</br>Please email me to add the term you're looking for.";
         }
     }
 }
 
+function changeImg(){
+    var obj = document.getElementById("imageSection");  
+    if (obj.getAttribute("src") == "img/1.jpg") {
+        obj.setAttribute("src", "img/2.jpg");     
+    }
+    else if (obj.getAttribute("src") == "img/2.jpg") {
+        obj.setAttribute("src", "img/3.jpg");     
+    }
+    else if (obj.getAttribute("src") == "img/3.jpg") {
+        obj.setAttribute("src", "img/4.jpg");     
+    }    
+    else if (obj.getAttribute("src") == "img/4.jpg") {
+        obj.setAttribute("src", "img/5.jpg");     
+    }    
+    else if (obj.getAttribute("src") == "img/5.jpg") {
+        obj.setAttribute("src", "img/6.jpg");     
+    }    
+    else if (obj.getAttribute("src") == "img/6.jpg") {
+        obj.setAttribute("src", "img/7.jpg");     
+    }
+    else if (obj.getAttribute("src") == "img/7.jpg") {
+        obj.setAttribute("src", "img/8.jpg");     
+    }   
+    else if (obj.getAttribute("src") == "img/8.jpg") {
+        obj.setAttribute("src", "img/9.jpg");     
+    }    
+    else if (obj.getAttribute("src") == "img/9.jpg") {
+        obj.setAttribute("src", "img/10.jpg");     
+    }    
+    else if (obj.getAttribute("src") == "img/10.jpg") {
+        obj.setAttribute("src", "img/1.jpg");     
+    }
+}
 
 Array.prototype.unique = function(){
 	this.sort();
@@ -106,7 +139,6 @@ function AutoComplete(input,auto,arr) {
 	this.index = -1;		
 	this.value_arr = arr;	
 }
-
 AutoComplete.prototype = {
 	init: function(){
 		var This = this;
@@ -114,14 +146,12 @@ AutoComplete.prototype = {
 		this.autoObj.style.left = this.obj.offsetLeft + "px";
 		this.autoObj.style.top = this.obj.offsetTop + this.obj.offsetHeight + "px";
 	},
-	
 	deleteDIV: function(){
 		while(this.autoObj.hasChildNodes()){
 			this.autoObj.removeChild(this.autoObj.firstChild);
 		}
 		setClass.addClass(this.autoObj,"hidden");
 	},
-	
 	autoOnmouseover: function(index){
 		if(index != this.index){
 			setClass.addClass(this.autoObj.children[index],"on");
@@ -129,14 +159,12 @@ AutoComplete.prototype = {
 			this.index = index;
 		}
 	},
-	
 	setValue: function(This){
 		return function(){
 			This.obj.value = this.seq;
 			setClass.addClass(This.autoObj,"hidden");
 		}
 	},
-
 	pressKey: function(event){
 		var code = event.keyCode;
 		var length = this.autoObj.children.length;
@@ -156,14 +184,14 @@ AutoComplete.prototype = {
 			}
 			setClass.addClass(this.autoObj.children[this.index],"on");
 			this.obj.value = this.autoObj.children[this.index].seq;
-		}else{			
+		}else{		
 			this.obj.value = this.autoObj.children[this.index].seq;
 			setClass.addClass(this.autoObj,"hidden");
 			this.index = -1;
 		}
 	},
 
-	start: function(event){
+    start: function(event){
 		event = event || window.event;
 		var code = event.keyCode;
 		var This = this;
