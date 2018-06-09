@@ -1,0 +1,102 @@
+.auto-inp{
+	width: 240px;
+	height: 36px;
+	padding-left: .5em;
+	border-radius: 2px;
+	border: 1px solid #dedede;
+	color: #666;
+	outline: none;
+}
+.auto{
+	width: 240px;
+	border: 1px solid #dedede;
+	border-top: none;
+	position: absolute;
+}
+.auto_out{
+	width: 238px;
+	height: 36px;
+	line-height: 36px;
+	padding-left: .5em;
+	color: #000;
+	background: #fff;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.auto_out.on{
+	background: #eee;
+	cursor: pointer;
+}
+.hidden{
+	display: none;
+}
+a{color:black;}
+
+a:hover{
+    color:palevioletred;
+    }    
+
+body{
+/*
+    background-image: url(img/wamuu.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+*/
+    zoom:1.09;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8.5;
+    line-height: 2;
+}
+h1{
+    color: black;
+    margin-top:50px;
+}
+.imageSection{
+    margin-top: 2.5px;
+    margin-bottom: 4px;
+    width:150px;
+    height:150px;
+    position: relative;
+    background-image: url(img/jolyne.jpg);
+    background-size: cover;
+    display: block;
+}
+
+input[type=text],language{
+}
+.language{
+    margin-top: 30px;
+    color: black;
+    font-size: 9;
+    margin-left:-78px;
+}
+.searchTerm{
+    color: darg;
+    margin-top: 10px;
+    font-size: 9;
+}
+.auto-inp::-webkit-input-placeholder{
+    color: darkgray;
+    font-size: 12px;
+}
+button{
+    margin-top: 5px;
+    border-radius:4px;
+    border-color: darkgray;
+}
+input[type=text],searchTerm{
+    margin-top: 5px;
+    border-radius:4px;
+    border:1px solid; 
+    border-color: darkgray;
+    height: 23px;
+    width: 140px;
+}
+
+.footer{
+    position: relative;
+    margin-top: 50px;
+}
