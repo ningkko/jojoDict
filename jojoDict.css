@@ -1,5 +1,5 @@
 /*long screen phone*/
-@media screen and (min-width:320px) and (max-width: 416px) and (min-height:530px){
+@media screen and (max-width: 416px) and (min-height:530px){
     body {
         zoom: 0.9;
         background-image: url(img/bg2.jpg);
@@ -145,7 +145,7 @@
 /*iphone6/7/8plus*/
 @media screen and (width: 414px) and (height:736px){
     body {
-        zoom: 1.08;
+        zoom: 1.12;
         background-image: url(img/bg2.jpg);
         background-color: #f9dbe6;
     }
