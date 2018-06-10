@@ -194,8 +194,8 @@
         background-image: url(img/bg.jpg);
     }
     
-    .footer2{
-        display: none;
+    .footer{
+        bottom: 15px;
     }   
     
     .background{
@@ -209,12 +209,12 @@
 /*middle-size computers*/
 @media screen and (min-width:416.1px) and (max-height:670px)and (min-height:615px){
     body{
-        zoom:1;
+        zoom:0.96;
         background-image: url(img/bg.jpg);
     }
 
-    .footer2{
-        display: none;
+    .footer{
+        bottom: 15px;
     }   
     
     .background{
@@ -228,12 +228,12 @@
 /*large-size comps*/
 @media screen and (min-width:416.1px)and (min-height:670.1px) and (max-height: 970px){
     body{
-        zoom:1.2;
+        zoom:1.1;
         background-image: url(img/bg.jpg);
     }
     
     .footer{
-        bottom: 35px;
+        bottom: 20px;
     }
     
     .background{
