@@ -3,7 +3,6 @@
     body {
         zoom: 1;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:40px;
@@ -18,7 +17,6 @@
     body {
         zoom: .95;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:40px;
@@ -33,7 +31,6 @@
     body {
         zoom: .85;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:40px;
@@ -48,7 +45,6 @@
     body {
         zoom: .75;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:40px;
@@ -62,7 +58,6 @@
     body {
         zoom: .65;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:40px;
@@ -76,7 +71,6 @@
     body {
         zoom: 0.9;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:50px;
@@ -91,7 +85,6 @@
     body {
         zoom: 0.8;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:50px;
@@ -106,7 +99,6 @@
     body {
         zoom: 0.7;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:50px;
@@ -120,7 +112,6 @@
     body {
         zoom: 0.6;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:50px;
@@ -134,7 +125,6 @@
     body {
         zoom: 0.5;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:50px;
@@ -166,7 +156,6 @@
     body {
         zoom: 0.76;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     .background{
         top:50px;
@@ -182,7 +171,6 @@
     body {
         zoom: 1.05;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     .footer{
@@ -200,7 +188,6 @@
     body {
         zoom: 1.05;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     .footer{
@@ -218,7 +205,6 @@
     body {
         zoom: 1.1;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     
@@ -234,7 +220,6 @@
     body {
         zoom: .8;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     .footer{
@@ -251,7 +236,6 @@
 @media screen and (width: 375px) and (height:667px){
     body {
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     .footer{
@@ -270,7 +254,6 @@
     body {
         zoom: 1.05;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     .footer{
@@ -290,7 +273,6 @@
     body {
         zoom: 1;
         background-image: url(img/bg2.jpg);
-        background-color: #f9dbe6;
     }
     
     
@@ -303,13 +285,7 @@
     
     .footer1{display: none;}
 }
-/*-------------------------------------------*/
-/*-------------------------------------------*/
-/*-------------------------------------------*/
-/*-----------------computers-----------------*/
-/*-------------------------------------------*/
-/*-------------------------------------------*/
-/*small-size computers*/
+
 @media screen and (min-width:416.1px) and (max-height:614.9px){
     body{
         zoom:.9;
@@ -473,8 +449,6 @@
 /*------------------------------------------------*/
 /*------------------------------------------------*/
 /*------------------------------------------------*/
-/*------------------------------------------------*/
-/*------------------------------------------------*/
 .auto-inp{
 	padding-left: .5em;
 	color: #666;
@@ -515,7 +489,7 @@ a:hover{
     }    
 
 body{
-    background-repeat:repeat;
+    background-repeat: no-repeat;
     background-position:bottom;
     background-attachment:fixed;
     font-family: 'Libre Franklin', sans-serif;
