@@ -529,7 +529,7 @@ body{
     right: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    position: absolute;
+    position: fixed;
     bottom: 100px;
     
 }
