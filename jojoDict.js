@@ -87,11 +87,8 @@ function changeImg(){
         obj.setAttribute("src", "img/9.jpg");     
     }    
     else if (obj.getAttribute("src") == "img/9.jpg") {
-        obj.setAttribute("src", "img/10.jpg");     
+        obj.setAttribute("src", "img/1.jpg");
     }    
-    else if (obj.getAttribute("src") == "img/10.jpg") {
-        obj.setAttribute("src", "img/1.jpg");     
-    }
 }
 
 Array.prototype.unique = function(){
