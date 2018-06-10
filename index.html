@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>       
-<meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<meta content="yes" name="apple-mobile-web-app-capable">
-<meta content="black" name="apple-mobile-web-app-status-bar-style">
-<meta content="telephone=no" name="format-detection">
+<meta charset="utf-8">
 <link rel= "icon"; sizes="168x168"； href="img/jojo.png">
 <link rel="stylesheet" type="text/css" href="jojoDict.css">
 <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
@@ -81,5 +77,22 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
     autoComplete.start(event);}
 
 	</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+$(function(){
+ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+  var viewportmeta = document.querySelector('meta[name="viewport"]');
+   if (viewportmeta) {
+    viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+  document.addEventListener('touchstart', function () {
+   viewportmeta.content = 'viewportmeta.content = width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+  }, false);
+   document.addEventListener('orientationchange', function () {
+   viewportmeta.content = 'viewportmeta.content = width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+  }, false);
+   }
+  }
+});
+</script>
     </body>
 </html>
