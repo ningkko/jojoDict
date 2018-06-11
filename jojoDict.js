@@ -129,7 +129,7 @@ var Bind = function(This){
 	}
 }
 
-function AutoComplete(input,auto,arr) {
+function AutoComplete(input,auto) {
 	this.obj = document.getElementById(input);
 	this.autoObj = document.getElementById(auto);
 	this.search_value = "";
