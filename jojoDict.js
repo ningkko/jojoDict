@@ -134,7 +134,7 @@ function AutoComplete(input,auto,arr) {
 	this.autoObj = document.getElementById(auto);
 	this.search_value = "";
 	this.index = -1;
-    var arr
+    var arr = new Array()
     if(language.value==="CN->EN"){
         for(var cnindex = 0; cnindex < data.length; cnindex++){
             arr.push(data[cnindex].CN);
@@ -144,7 +144,7 @@ function AutoComplete(input,auto,arr) {
             arr.push(data[enindex].EN);
     }
 	this.value_arr = arr
-    
+
 AutoComplete.prototype = {
 	init: function(){
 		var This = this;
