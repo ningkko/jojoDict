@@ -3,7 +3,7 @@ Terms in JoJo's Bizarre Adventure.\
 ENG<->CHN now supported.
 ### https://ningkko.github.io/jojoDictionary/
 ### Note:
-English info from jojo.Wikia.com/wiki/Main-Page and JoJo's manga in Eng.\
+English info from http://jojo.Wikia.com/wiki/Main-Page and JoJo's manga in Eng.\
 Chinese info from chinese manga and baidu.
 #### To do:
 1. 3
