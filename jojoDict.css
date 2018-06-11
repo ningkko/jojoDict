@@ -905,7 +905,7 @@ a:hover{
 
 .background{
     background-color: rgba(255,255,255,0.83);
-    position: fixed;
+    position: absolute;
     margin: auto;
     left:0;
     right: 0;
