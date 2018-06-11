@@ -490,6 +490,7 @@ a:hover{
 body{
     background-color: #f9dbe6;
     background-repeat: no-repeat;
+    background-clip: content-box;
     background-attachment:absolute;
     font-family: 'Libre Franklin', sans-serif;
     line-height: 2;
