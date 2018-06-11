@@ -498,12 +498,12 @@ body{
 .background{
 
     background-color: rgba(255,255,255,0.83);
+    position: absolute;
     margin: auto;
     left:0;
     right: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    position: fixed;
     bottom: 100px;
     
 }
@@ -575,7 +575,7 @@ input[type=text],searchTerm{
 }
 
 .footer{
-    position: fixed;
+    position: absolute;
     left:0;
     right: 0;  
     font-size: 12px;
