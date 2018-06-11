@@ -489,6 +489,7 @@ a:hover{
     }    
 
 body{
+    background-color: #f9dbe6;
     background-repeat: no-repeat;
     background-position:bottom;
     background-attachment:fixed;
