@@ -23,7 +23,6 @@
         height:550px;
         width: 320px;
     }   
-    
     .footer{bottom:40px;}
 }
 
@@ -492,7 +491,7 @@ body{
     background-color: #f9dbe6;
     background-repeat: no-repeat;
     background-position:bottom;
-    background-attachment:fixed;
+    background-attachment:absolute;
     font-family: 'Libre Franklin', sans-serif;
     line-height: 2;
 }
