@@ -5,7 +5,7 @@ ENG<->CHN now supported.
 ### Note:
 English info from http://jojo.Wikia.com/wiki/Main-Page and JoJo's manga in Eng.\
 Chinese info from chinese manga and baidu.\
-All images from Araki Sensei.
+All images from Araki Sensei's Veller and 6251 Collections.
 #### To do:
 1. 3
 2. 4
