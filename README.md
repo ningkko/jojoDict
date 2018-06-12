@@ -1,11 +1,19 @@
 # JoJo-Dictionary
 Terms in JoJo's Bizarre Adventure.\
 ENG<->CHN now supported.
-### https://ningkko.github.io/jojoDictionary/
-### Note:
+## https://ningkko.github.io/jojoDictionary/
+## Note:
 English info from http://jojo.Wikia.com/wiki/Main-Page and JoJo's manga in Eng.\
 Chinese info from chinese manga and baidu.\
 All images from Araki Sensei's Veller and 6251 Collections.
+## Demo
+#### Computers
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/1.png)
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/2.png)
+#### Mobiles
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/3.png)
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/4.png)
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/5.png)
 #### To do:
 1. 3
 2. 4
@@ -15,7 +23,6 @@ All images from Araki Sensei's Veller and 6251 Collections.
 7. 8
 8. Game
 9. Novel
-
 #### Memo
 1. MediaQuery for different browsers
 2. Auto-input function
