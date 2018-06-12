@@ -1,7 +1,8 @@
 # JoJo-Dictionary
 Terms in JoJo's Bizarre Adventure.\
 ENG<->CHN now supported.
-## https://ningkko.github.io/jojoDictionary/
+## Website
+https://ningkko.github.io/jojoDictionary/
 ## Note:
 English info from http://jojo.Wikia.com/wiki/Main-Page and JoJo's manga in Eng.\
 Chinese info from chinese manga and baidu.\
