@@ -12,8 +12,8 @@ All images from Araki Sensei's Veller and 6251 Collections.
 ![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/1.png)\
 ![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/2.png)
 #### Mobiles
-![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/3.png)\
-![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/4.png)\
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/3.png)
+![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/4.png)
 ![image](https://github.com/ningkko/jojoDictionary/blob/gh-pages/demo/5.png)
 #### To do:
 1. 3
